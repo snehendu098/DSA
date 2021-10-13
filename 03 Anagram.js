@@ -9,6 +9,7 @@
 // we wi;; decrement the number of letters whil;e checking the second string
 
 function isAnagram(string1, string2) {
+  // checking the length of the string
   if (string1.length !== string2.length) {
     return false;
   }
@@ -22,6 +23,7 @@ function isAnagram(string1, string2) {
 
   for (let items of string2) {
     if (!counter[items]) {
+      // validates if there is any extra item
       console.log(items);
       return false;
     }
